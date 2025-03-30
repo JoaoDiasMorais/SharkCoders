@@ -13,7 +13,6 @@ else:
      if (numero2 + 1) % 2 == 0:
          for x in range(numero1, numero2 + 1, 2):
             print(x)
-            print(numero1 + numero2)
      else:
         for x in range(numero1, numero2 + 1, 2):
             print(x)
