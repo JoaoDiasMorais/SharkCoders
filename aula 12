@@ -1,0 +1,10 @@
+from time import sleep
+numero = int(input("Escolhe um numero"))
+while numero > -1:
+    if numero == 0:
+        print("Blast Off!")
+        numero = numero-1
+    else:
+        numero = numero-1
+        print(numero)
+        sleep(1)
