@@ -1,0 +1,13 @@
+from datetime import date
+ano = int(input("Qual ano nasceste?"))
+idade = date.today().year - ano
+if idade <= 9:
+    print("Estás na classe Benjamin")
+elif idade <= 14:
+    print("Estás na classe Infantil")
+elif idade <= 19:
+    print("Estás na classe Júnior")
+elif idade <= 25:
+    print ("Estás na classe Sénior")
+else:
+    print("Estás na classe Master")
