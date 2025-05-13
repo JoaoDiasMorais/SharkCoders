@@ -1,0 +1,20 @@
+from time import sleep
+from random import randint
+guess = int(input("How many tries will it take for the 2 dice to roll the same number?"))
+dice1 = 0
+dice2 = 0
+tries = 0
+while True:
+    tries += 1
+    dice1 = randint(1,6)
+    dice2 = randint(1,6)
+    print(dice1,dice2)
+    sleep(0.5)
+    if (dice1 == 6) and (dice2 == 6):
+        print(f"Wow, both sides are the same, it only took {tries} tries")
+        break
+        
+if guess == tries:
+    print("You guessed the correct ammount of tries.")
+else:
+    print("Better luck next time")
