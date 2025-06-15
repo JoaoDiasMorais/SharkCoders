@@ -39,15 +39,40 @@ match Theme:
                 print("errado. -5 pontos")
                 Points = Points - 5
                 print(f"Pontos = {Points}")
+                sleep(1)
             case 2:
                 print("certo. +10 pontos")
                 Points = Points + 10
                 print(f"Pontos = {Points}")
+                sleep(1)
             case 3:
                 print("errado. -5 pontos")
                 Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 4:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+        print("Pergunta 3. Qual animal tem 3 coracoes?")
+        sleep(2)
+        pergunta3 = int(input("Coloque 1 para Vaca, 2 para o Galinha, 3 para as Polvo e 4 para o Elefante"))
+        match pergunta2:
+            case 1:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+            case 2:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+            case 3:
+                print("certo. +10 pontos")
+                Points = Points + 10
                 print(f"Pontos = {Points}")
             case 4:
                 print("errado. -5 pontos")
                 Points = Points - 5
                 print(f"Pontos = {Points}")
+
