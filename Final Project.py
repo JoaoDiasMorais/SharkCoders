@@ -63,16 +63,72 @@ match Theme:
                 print("errado. -5 pontos")
                 Points = Points - 5
                 print(f"Pontos = {Points}")
+                sleep(1)
             case 2:
                 print("errado. -5 pontos")
                 Points = Points - 5
                 print(f"Pontos = {Points}")
+                sleep(1)
             case 3:
                 print("certo. +10 pontos")
                 Points = Points + 10
                 print(f"Pontos = {Points}")
+                sleep(1)
             case 4:
                 print("errado. -5 pontos")
                 Points = Points - 5
                 print(f"Pontos = {Points}")
-
+                sleep(1)
+    case 2:
+        print("Estás pronto para a Trivia sobre Capitais?")
+        sleep(2)
+        print("Pergunta 1")
+        print("Qual pais tem 3 capitais")
+        sleep(2)
+        pergunta1_1 = int(input("Coloque 1 para Australia, 2 para EUA , 3 para India e 4 para Africa du Sul"))
+        match pergunta1:
+            case 1:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 2:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 3:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 4:
+                print("certo. +10 pontos")
+                Points = Points + 10
+                print(f"Pontos = {Points}")
+                sleep(1)
+        print("Pergunta 2")
+        print("Qual é o pais com o capital mais alto acima do nivel do mar?")
+        sleep(2)
+        pergunta1_1 = int(input("Coloque 1 para Australia, 2 para Nepal , 3 para Bolivia e 4 para India"))
+        match pergunta1:
+            case 1:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 2:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 3:
+                print("certo. +10 pontos")
+                Points = Points + 10
+                print(f"Pontos = {Points}")
+                sleep(1)
+            case 4:
+                print("errado. -5 pontos")
+                Points = Points - 5
+                print(f"Pontos = {Points}")
+                sleep(1)
