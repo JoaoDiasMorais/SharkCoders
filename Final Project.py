@@ -4,25 +4,25 @@ from time import sleep
 trivia_questions = {
     "Animal" : [
         {
-            "question": "What Animal Has Rectangular Pupils?",
-            "options": ["Penguins", "Goats", "Parrots", "Monkeys"],
+            "question": "Que animal tem pupilas retangulares??",
+            "options": ["Pinguins", "Cabras", "Papagaio", "Macaco"],
             "answer": 2
         },
         {
-            "question": "Which part of the elephants body has over 40,000 muscles?",
-            "options": ["Trunk", "Ears", "Legs", "Stomach"],
+            "question": "Qual parte do corpo dos elefantes tem mais de 40.000 músculos??",
+            "options": ["tronco", "orelhas", "pernas", "estômago"],
             "answer": 1
         },
         {
-            "question": "Which Animal Has 3 Hearts",
-            "options": ["Chicken", "Whale", "Octopus", "Cow"],
+            "question": "Qual animal tem 3 corações?",
+            "options": ["galinha", "baleia", "polvo", "vaca"],
             "answer": 3
         },
     ],
-    "Countries and Capitals" : [
+    "Paises e Capitais" : [
         {
-            "question": "What Country has the highest mountain above sea level?",
-            "options": ["Belgium", "India", "Bolivia", "Nepal"],
+            "question": "Qual país tem a montanha mais alta acima do nível do mar??",
+            "options": ["Bélgica", "Índia", "Bolívia", "Nepal"],
             "answer": 4
         },
         {
