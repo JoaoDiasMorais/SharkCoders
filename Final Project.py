@@ -19,7 +19,7 @@ trivia_questions = {
             "answer": 3
         },
     ],
-    "Capitals" : [
+    "Countries and Capitals" : [
         {
             "question": "What Country has the highest mountain above sea level?",
             "options": ["Belgium", "India", "Bolivia", "Nepal"],
