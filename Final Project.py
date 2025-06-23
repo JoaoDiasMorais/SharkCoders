@@ -35,12 +35,11 @@ trivia_questions = {
             "options": ["New Zealand", "Chile", "Antartica", "Australia"],
             "answer": 1
         },
-    ] 
+    ]
 }
 def ask_question():
     category = random.choice(list(trivia_questions.keys()))
     question_answer = random.choice(trivia_questions[category])
-
     print(f'Categoria: {category}')
     sleep(1)
     print(f'Question: {question_answer["question"]}')
@@ -51,9 +50,14 @@ def ask_question():
     correct_answer = question_answer["answer"]
     if answer == correct_answer:
         print("Correct")
+        trivia_questions[category].remove(question_answer)
     else:
         print("Wrong")
+        trivia_questions[category].remove(question_answer)
+
 
 while True:
     ask_question()
+    if trivia_questions == 0:
+        break
 
