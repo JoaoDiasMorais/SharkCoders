@@ -26,14 +26,31 @@ trivia_questions = {
             "answer": 4
         },
         {
-            "question": "Which country has 3 capitals?",
-            "options": ["Bolivia", "South Africa", "Australia", "USA"],
+            "question": "Qual pais tem 3 capitais?",
+            "options": ["Bolivia", "Africa du Sul", "Australia", "USA"],
             "answer": 2
         },
         {
-            "question": "Which country has the capital most to the most south on the planet",
-            "options": ["New Zealand", "Chile", "Antartica", "Australia"],
+            "question": "Qual país tem a capital mais ao sul do planeta ",
+            "options": ["Nova Zelandia", "Chile", "Antartica", "Australia"],
             "answer": 1
+        },
+    ],
+    "Comida" : [
+        {
+            "question": "Qual destas plantas é uma fruta?",
+            "options": ["Tomate", "Batata", "Cenoura", "Cebola"],
+            "answer": 1
+        },
+        {
+            "question": "Qual destes produtos nunca expira?",
+            "options": ["Leite Condensado", "Arroz", "Mel", "Batata"],
+            "answer": 3
+        },
+        {
+            "question": "O que foi a primeira planta cultivada no espaço?",
+            "options": ["Tomate", "Batata", "Cenoura", "Cebola"],
+            "answer": 2
         },
     ]
 }
@@ -46,18 +63,19 @@ def ask_question():
     options = question_answer["options"]
     for i, option in enumerate(options):
         print(f"{i+1}. {option}")
-    answer = int(input("Insert your number 1-4 : "))
+    answer = int(input("Escolhe a resposta 1-4 : "))
     correct_answer = question_answer["answer"]
     if answer == correct_answer:
-        print("Correct")
+        print("Certo")
         trivia_questions[category].remove(question_answer)
     else:
-        print("Wrong")
+        print("Errado")
         trivia_questions[category].remove(question_answer)
 
 
 while True:
     ask_question()
-    if trivia_questions == 0:
+    if all(len(questions) == 0 for questions in trivia_questions.values()):
         break
+        
 
